@@ -1,5 +1,4 @@
 
-
 # All the Nether Roof stuff permission node is roof.use
 Nether_Tp: true
 Tp_Complete_Message: "&b[prefix] &dYou have been teleported to the nether roof!"
@@ -16,6 +15,9 @@ Leave: "&b<player> &dhas left the game!"
 
 # Wither stuff
 Disable_Withers: true
+
+# Possible Thunder Hack Patch
+ThunderHackPatch: true
 
 # Flirt Stuff. permission node flirt.use
 Flirt: "&b[VILE] &dHey baby, you look mighty fine today~ ;3"
