@@ -23,6 +23,7 @@ public final class Main extends JavaPlugin implements Listener {
         pm.registerEvents(new Kill(this), this);
         pm.registerEvents(new Discord(this), this);
         pm.registerEvents(new Help(this), this);
+        pm.registerEvents(new Lightning(this), this);
         //Other registrations
         new Flirt(this);
 
