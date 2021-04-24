@@ -1,36 +1,42 @@
+
+
+# All the Nether Roof stuff permission node is roof.use
 Nether_Tp: true
-
-Tp_Comaplete_Message: "&b[prefix] &dYou have been teleported to the nether roof!"
-
+Tp_Complete_Message: "&b[prefix] &dYou have been teleported to the nether roof!"
 Wrong_Y_Message: "&b[prefix] &dYou must be at Y level 125 to execute this command!"
-
 Wrong_World_Message: "&b[prefix] &dYou have to be in the nether to get on the nether roof silly!"
 
-Insufficient_Permissions_Message: "&b[prefix] &dYou do not have permissions to execute this command! contact your admin!"
+# Insufficient permissions.
+Insufficient_Permissions_Message: "&4You do not have permissions to execute this command! Contact your admin!"
 
-FirstJoin: "&1<player> &dhas joined for the first time!"
-Join: "&1<player> &dhas joined the game!"
-Leave: "&1<player> &dhas left the game!"
+# All the join messages
+FirstJoin: "&b<player> &dhas joined for the first time!"
+Join: "&b<player> &dhas joined the game!"
+Leave: "&b<player> &dhas left the game!"
 
+# Wither stuff
 Disable_Withers: true
 
+# Flirt Stuff. permission node flirt.use
 Flirt: "&b[VILE] &dHey baby, you look mighty fine today~ ;3"
 Finish_Flirt: "&bSent a flirt to &d<player>"
 
-Discord_Link: "Join today! https://discord.gg/UJgdqV93SU"
+# Discord link. permission node discord.use
+Discord_Link: "&bJoin today! &dhttps://discord.gg/UJgdqV93SU"
 
+# Help thing.
 Help:
-  - "&8[---------------------HELP---------------------]"
-  - "&6/vote - Vote for the server to unlock commands"
-  - "&6/w - whisper command"
-  - "&6/r - reply command"
-  - "&6/ignore - ignore all messages from a player also let's you un-ignore."
-  - "&6/stats - shows server stats"
-  - "&6/tpa -  tpa if you vote."
-  - "&6/tpy <player> - accepts tpa"
-  - "&6/tpn <player> - denies tpa"
-  - "&6/jd - shows join date"
-  - "&6/nc - shows name color"
-  - "&6/flirt - flirts at you"
-  - "&6/hat - puts block on your head"
-  - "&8[---------------------HELP---------------------]"
+  - "&b[---------------------HELP---------------------]"
+  - "&d/vote - Vote for the server to unlock commands"
+  - "&d/w - whisper command"
+  - "&d/r - reply command"
+  - "&d/ignore - ignore all messages from a player also let's you un-ignore."
+  - "&d/stats - shows server stats"
+  - "&d/tpa -  tpa if you vote."
+  - "&d/tpy <player> - accepts tpa"
+  - "&d/tpn <player> - denies tpa"
+  - "&d/jd - shows join date"
+  - "&d/nc - shows name color"
+  - "&d/flirt - flirts at you"
+  - "&d/hat - puts block on your head"
+  - "&b[---------------------HELP---------------------]"
