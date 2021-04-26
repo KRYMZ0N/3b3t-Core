@@ -13,7 +13,7 @@ import org.bukkit.event.player.PlayerInteractAtEntityEvent;
 import org.bukkit.inventory.ItemStack;
 
 public class Interact implements Listener {
-
+// not my original code, but I cleaned it up a bit, and I trust myself more than the original writer.
     private final Main plugin;
 
     public Interact(Main plugin) {

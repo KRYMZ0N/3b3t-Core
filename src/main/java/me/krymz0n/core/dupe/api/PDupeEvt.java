@@ -7,6 +7,7 @@ import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
 public final class PDupeEvt extends Event implements Cancellable {
+    // not my original code, but I cleaned it up a bit, and I trust myself more than the original writer.
 
     private static final HandlerList handlers = new HandlerList();
     //stuff

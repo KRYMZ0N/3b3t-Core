@@ -10,6 +10,7 @@ import org.bukkit.event.Listener;
 import java.util.ArrayList;
 
 public class DupeEvt implements Listener {
+    // not my original code, but I cleaned it up a bit, and I trust myself more than the original writer.
 
     @EventHandler
     public void onDupe(PDupeEvt evt) {
