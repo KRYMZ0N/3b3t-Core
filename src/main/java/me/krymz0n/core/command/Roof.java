@@ -23,30 +23,22 @@ public class Roof implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
     public void onCommandPreprocess(PlayerCommandPreprocessEvent e) {
-
         if (plugin.getConfig().getBoolean("Nether_Tp")) {
-
             if (e.getMessage().equalsIgnoreCase("/roof")) {
                 Player p = e.getPlayer();
-
                 if (p.hasPermission("roof.use")) {
-
                     if (p.getWorld().getEnvironment().equals(World.Environment.NETHER)) {
                         Location location = p.getLocation();
-
                         if (location.getBlockY() == 125) {
                             p.teleport(new Location(Bukkit.getWorld("world_nether"), location.getBlockX(), 128, location.getBlockZ()));
                             p.sendMessage(Color.chat(plugin.getConfig().getString("Tp_Complete_Message")));
                             System.out.println(Color.chat("&bTeleported &d" + p.getName() + " &bto nether roof!"));
-
                         } else {
                             p.sendMessage(Color.chat(plugin.getConfig().getString("Wrong_Y_Message")));
                         }
-
                     } else {
                         p.sendMessage(Color.chat(plugin.getConfig().getString("Wrong_World_Message")));
                     }
-
                 } else {
                     p.sendMessage(Color.chat(plugin.getConfig().getString("Insufficient_Permissions_Message")));
                 }

@@ -26,7 +26,11 @@ Finish_Flirt: "&bSent a flirt to &d<player>"
 # Discord link. permission node discord.use
 Discord_Link: "&bJoin today! &dhttps://discord.gg/UJgdqV93SU"
 
-Enable_Dupe: true
+# Enables a tps command using /ticks because my dumb ass can't figure out why /tps still is showing the default one.
+tps: true
+
+# Enables an op dupe, by default it is off, but if you like the salc1 dupe, turn it on.
+Enable_Dupe: false
 
 # Help thing.
 Help:

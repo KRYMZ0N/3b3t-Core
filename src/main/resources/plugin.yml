@@ -2,7 +2,7 @@ name: Core
 version: ${project.version}
 main: me.krymz0n.core.Main
 authors: [ KRYMZ0N ]
-description: A core plugin for my server 16b16t.net. Feel free to use, but it is intended for my server.
+description: A core plugin for my server 3b3t.me. Feel free to use, but it is intended for my server.
 website: http://www.16b16t.net/
 
 commands:
@@ -16,6 +16,8 @@ commands:
     description: yes
   roof:
     description: yes
-  tps:
+  ticks:
     description: yes
-
+    aliases: [tps]
+  16b16t:
+    description: yes

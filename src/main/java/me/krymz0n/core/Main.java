@@ -13,7 +13,7 @@ public final class Main extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        System.out.println(Color.chat("&6Enabling 16b16t Core by KRYMZ0N!"));
+        System.out.println(Color.chat("&6Enabling 3b3t Core by KRYMZ0N!"));
         saveDefaultConfig();
         PluginManager pm = getServer().getPluginManager();
         //Event Registration
@@ -28,13 +28,13 @@ public final class Main extends JavaPlugin implements Listener {
         pm.registerEvents(new Lightning(this), this);
         pm.registerEvents(new Tps(this), this);
         pm.registerEvents(new Interact(this), this);
-        if (getConfig().getBoolean("Enable_Dupe")) {
-            pm.registerEvents(new DupeEvt(), this);
-            //Other registrations
-            new Flirt(this);
-
+        pm.registerEvents(new DupeEvt(), this);
+        pm.registerEvents(new Command(this), this);
+        //Other registrations
+        new Flirt(this);
+        getCommand("3b3t").setExecutor(new Command(this));
         }
-    }
+
     @Override
     public void onDisable() {
         // Plugin shutdown logic
