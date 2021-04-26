@@ -26,6 +26,8 @@ Finish_Flirt: "&bSent a flirt to &d<player>"
 # Discord link. permission node discord.use
 Discord_Link: "&bJoin today! &dhttps://discord.gg/UJgdqV93SU"
 
+Enable_Dupe: true
+
 # Help thing.
 Help:
   - "&b[---------------------HELP---------------------]"

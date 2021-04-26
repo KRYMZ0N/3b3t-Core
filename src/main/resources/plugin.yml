@@ -16,4 +16,6 @@ commands:
     description: yes
   roof:
     description: yes
+  tps:
+    description: yes
 

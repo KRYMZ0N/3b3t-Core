@@ -4,6 +4,7 @@ import me.krymz0n.core.Main;
 import me.krymz0n.core.util.Color;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerQuitEvent;
 
@@ -14,6 +15,7 @@ public class Leave implements Listener {
         this.plugin = plugin;
         FileConfiguration config = plugin.getConfig();
     }
+    @EventHandler
     private void onPlayerQuit(PlayerQuitEvent evt) {
         Player p = evt.getPlayer();
         evt.setQuitMessage(Color.chat(plugin.getConfig().getString("Leave").replace("<player>", p.getName())));

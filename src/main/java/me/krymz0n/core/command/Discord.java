@@ -22,11 +22,7 @@ public class Discord implements Listener {
     public void onCommandPreprocess(PlayerCommandPreprocessEvent e) {
         Player p = e.getPlayer();
         if (e.getMessage().equalsIgnoreCase("/discord")) {
-            if (p.hasPermission("discord.use")) {
-                p.sendMessage(Color.chat(plugin.getConfig().getString("Discord_Link")));
-            }else {
-                p.sendMessage(Color.chat(plugin.getConfig().getString("Insufficient_Permissions")));
-            }
+            p.sendMessage(Color.chat(plugin.getConfig().getString("Discord_Link")));
         }
     }
 }

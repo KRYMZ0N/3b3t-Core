@@ -1,6 +1,8 @@
 package me.krymz0n.core;
 
 import me.krymz0n.core.command.*;
+import me.krymz0n.core.dupe.listener.DupeEvt;
+import me.krymz0n.core.dupe.listener.Interact;
 import me.krymz0n.core.listener.*;
 import me.krymz0n.core.util.Color;
 import org.bukkit.event.Listener;
@@ -24,11 +26,15 @@ public final class Main extends JavaPlugin implements Listener {
         pm.registerEvents(new Discord(this), this);
         pm.registerEvents(new Help(this), this);
         pm.registerEvents(new Lightning(this), this);
-        //Other registrations
-        new Flirt(this);
+        pm.registerEvents(new Tps(this), this);
+        pm.registerEvents(new Interact(this), this);
+        if (getConfig().getBoolean("Enable_Dupe")) {
+            pm.registerEvents(new DupeEvt(), this);
+            //Other registrations
+            new Flirt(this);
 
+        }
     }
-
     @Override
     public void onDisable() {
         // Plugin shutdown logic
