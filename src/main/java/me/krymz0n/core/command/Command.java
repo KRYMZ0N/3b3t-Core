@@ -27,7 +27,7 @@ public class Command implements CommandExecutor, Listener {
             }
         }
         if (args[0].toLowerCase().startsWith("ver")) {
-            sender.sendMessage(Color.chat(Prefix.p + "&b " + plugin.getDescription().getVersion()));
+            sender.sendMessage(Color.chat(Prefix.p + "&d " + plugin.getDescription().getVersion()));
         }
         return false;
     }

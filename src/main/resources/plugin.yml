@@ -19,5 +19,5 @@ commands:
   ticks:
     description: yes
     aliases: [tps]
-  16b16t:
+  3b3t:
     description: yes

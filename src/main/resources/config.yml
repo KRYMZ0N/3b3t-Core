@@ -32,6 +32,9 @@ tps: true
 # Enables an op dupe, by default it is off, but if you like the salc1 dupe, turn it on.
 Enable_Dupe: false
 
+# Removes dupe books so that your console isn't fucked if you use paper
+Remove_Dupe_Books: true
+
 # Help thing.
 Help:
   - "&b[---------------------HELP---------------------]"
