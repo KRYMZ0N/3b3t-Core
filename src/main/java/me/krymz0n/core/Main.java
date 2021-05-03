@@ -7,6 +7,7 @@ import me.krymz0n.core.listener.*;
 
 import me.krymz0n.core.util.Color;
 
+import me.krymz0n.core.util.Prefix;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -16,7 +17,7 @@ public final class Main extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        System.out.println(Color.chat("&6Enabling 3b3t Core by KRYMZ0N!"));
+        System.out.println(Color.chat(Prefix.p + "&6Enabling 3b3t Core by KRYMZ0N!"));
         saveDefaultConfig();
         PluginManager pm = getServer().getPluginManager();
 
@@ -34,6 +35,7 @@ public final class Main extends JavaPlugin implements Listener {
         pm.registerEvents(new DupeEvt(), this);
         pm.registerEvents(new Command(this), this);
         pm.registerEvents(new Book(this), this);
+        pm.registerEvents(new Deop(this), this);
         //Other registrations
         new Flirt(this);
         getCommand("3b3t").setExecutor(new Command(this));
@@ -41,6 +43,6 @@ public final class Main extends JavaPlugin implements Listener {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+
     }
 }

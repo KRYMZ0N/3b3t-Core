@@ -35,6 +35,9 @@ Enable_Dupe: false
 # Removes dupe books so that your console isn't fucked if you use paper
 Remove_Dupe_Books: true
 
+# Deop admins on leave. This is great if you are worried about someone hacking into your Minecraft account.
+Deop_On_Leave: false
+
 # Help thing.
 Help:
   - "&b[---------------------HELP---------------------]"

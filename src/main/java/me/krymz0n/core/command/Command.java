@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 
 public class Command implements CommandExecutor, Listener {
+
     private final Main plugin;
 
     public Command(Main plugin) {

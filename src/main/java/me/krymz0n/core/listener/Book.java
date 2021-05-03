@@ -35,7 +35,7 @@ public class Book implements Listener {
                                     if (book != null) {
                                         if (isDupeBook(book)) {
                                             ((Container) evt.getClickedBlock().getState()).getInventory().remove(chestItem);
-                                            System.out.println(Color.chat(Prefix.p + "&dRemoved a Dupe Book"));
+                                            System.out.println(Color.chat(Prefix.p + "&dRemoved a Dupe Book!"));
                                         }
                                     }
                                 }
@@ -48,7 +48,7 @@ public class Book implements Listener {
     }
 
     private boolean isDupeBook(BookMeta book) {
-        for (int size =45; book.getPageCount() > size; size++) {
+        for (int size = 45; book.getPageCount() >= size; size++) {
                 return true;
         }
             return false;
