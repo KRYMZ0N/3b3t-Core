@@ -17,7 +17,7 @@ public final class Main extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        System.out.println(Color.chat(Prefix.p + "&6Enabling 3b3t Core by KRYMZ0N!"));
+        System.out.println(Color.chat(Prefix.p + "&dEnabling 3b3t Core by KRYMZ0N!"));
         saveDefaultConfig();
         PluginManager pm = getServer().getPluginManager();
 
