@@ -21,3 +21,5 @@ commands:
     aliases: [tps]
   3b3t:
     description: yes
+  coords:
+    description: yes

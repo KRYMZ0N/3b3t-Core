@@ -36,8 +36,10 @@ public final class Main extends JavaPlugin implements Listener {
         pm.registerEvents(new Command(this), this);
         pm.registerEvents(new Book(this), this);
         pm.registerEvents(new Deop(this), this);
+        pm.registerEvents(new NetherRoof(this), this);
         //Other registrations
         new Flirt(this);
+        new Coords(this);
         getCommand("3b3t").setExecutor(new Command(this));
       }
 

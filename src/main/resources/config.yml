@@ -38,6 +38,8 @@ Remove_Dupe_Books: true
 # Deop admins on leave. This is great if you are worried about someone hacking into your Minecraft account.
 Deop_On_Leave: false
 
+Prevent_Nether_Roof: true
+
 # Help thing.
 Help:
   - "&b[---------------------HELP---------------------]"
