@@ -2,6 +2,7 @@ package me.krymz0n.core.command;
 
 import me.krymz0n.core.Main;
 import me.krymz0n.core.util.Color;
+import me.krymz0n.core.util.Prefix;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
@@ -35,6 +36,25 @@ public class Roof implements Listener {
                             System.out.println(Color.chat("&bTeleported &d" + p.getName() + " &bto nether roof!"));
                         } else {
                             p.sendMessage(Color.chat(plugin.getConfig().getString("Wrong_Y_Message")));
+                        }
+                    } else {
+                        p.sendMessage(Color.chat(plugin.getConfig().getString("Wrong_World_Message")));
+                    }
+                } else {
+                    p.sendMessage(Color.chat(plugin.getConfig().getString("Insufficient_Permissions_Message")));
+                }
+            }
+            if (e.getMessage().equalsIgnoreCase("/stuck")) {
+                Player p = e.getPlayer();
+                if (p.hasPermission("roof.use")) {
+                    if (p.getWorld().getEnvironment().equals(World.Environment.NETHER)) {
+                        Location location = p.getLocation();
+                        if (location.getBlockY() > 125) {
+                            p.teleport(new Location(Bukkit.getWorld("world_nether"), location.getBlockX(), 120, location.getBlockZ()));
+                            p.sendMessage(Color.chat(Prefix.p + "&dYou have been teleported below the roof!"));
+                            System.out.println(Color.chat("&bTeleported &d" + p.getName() + " &bto nether roof!"));
+                        } else {
+                            p.sendMessage(Color.chat("You have to be on the roof!"));
                         }
                     } else {
                         p.sendMessage(Color.chat(plugin.getConfig().getString("Wrong_World_Message")));

@@ -37,25 +37,15 @@ public class NetherRoof implements Listener {
                 if (!p.hasPermission("PreventRoof.bypass")) {
                     if (evt.getTo().getY() >= 128) {
                         evt.getPlayer().teleport(new Location(evt.getPlayer().getWorld(), evt.getPlayer().getLocation().getX(), 120, evt.getPlayer().getLocation().getZ()));
+                    }
                 }
             }
-        }
 
             if (evt.getPlayer().isInsideVehicle()) {
                 if (evt.getPlayer().getWorld().getEnvironment().equals(World.Environment.NETHER)) {
                     if (plugin.getConfig().getBoolean("Prevent_Nether_Roof")) {
                         if (evt.getPlayer().getLocation().getY() > 127) {
                             evt.getPlayer().leaveVehicle();
-                        }
-                    }
-                }
-            }
-
-            if (evt.getPlayer().isGliding()) {
-                if (evt.getPlayer().getWorld().getEnvironment().equals(World.Environment.NETHER)) {
-                    if (plugin.getConfig().getBoolean("Prevent_Nether_Roof")) {
-                        if (evt.getPlayer().getLocation().getY() > 127) {
-                            evt.getPlayer().setGliding(false);
                         }
                     }
                 }

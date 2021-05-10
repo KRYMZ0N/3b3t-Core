@@ -16,6 +16,8 @@ commands:
     description: yes
   roof:
     description: yes
+  stuck:
+    description: yes
   ticks:
     description: yes
     aliases: [tps]

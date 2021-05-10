@@ -40,6 +40,8 @@ Deop_On_Leave: false
 
 Prevent_Nether_Roof: true
 
+75k_to_home: true
+
 # Help thing.
 Help:
   - "&b[---------------------HELP---------------------]"
